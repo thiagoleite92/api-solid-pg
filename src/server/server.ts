@@ -1,10 +1,14 @@
-import { app } from '../app/app';
+import { app } from "../app/app";
+import { env } from "../env";
 
 app
   .listen({
-    port: 3333,
-    host: '0.0.0.0',
+    port: env.PORT,
+    host: "0.0.0.0",
   })
   .then(() => {
-    console.log('HTTP SERVER RUNNING 🚢');
+    console.log(`🚢 HTTP SERVER RUNNING ON PORT: ${env.PORT}`);
+  })
+  .catch(() => {
+    console.log("Deu ruim");
   });
