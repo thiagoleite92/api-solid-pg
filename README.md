@@ -9,7 +9,7 @@ GymPass Style App
 - [✔] Deve ser possível obter o perfil de um usuário logado
 - [ ] Deve ser possível obter o número de check-ins realizados pelo usuário
 - [ ] Deve ser possível o usuário ver seu histórico de check-in
-- [ ] Deve ser possível o usuário buscar academias próximas
+- [ ] Deve ser possível o usuário buscar academias próximas até 10km
 - [ ] Deve ser possível o usuário buscar academias pelo nome
 - [✔] Deve ser possível o usuario realizar check-in na academia
 - [ ] Deve ser possível validar o check-in de um usuário
