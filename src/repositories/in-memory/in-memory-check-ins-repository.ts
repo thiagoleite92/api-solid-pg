@@ -40,4 +40,12 @@ export class InMemoryCheckInsRepository implements CheckInsRepository {
 
     return checkInOnSameDate || null
   }
+
+  async countByUserId(userId: string) {
+    const checkIns = this.items.filter(
+      (checkIn) => checkIn.user_id === userId,
+    ).length
+
+    return checkIns
+  }
 }
