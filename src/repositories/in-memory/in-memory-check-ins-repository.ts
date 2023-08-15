@@ -48,4 +48,18 @@ export class InMemoryCheckInsRepository implements CheckInsRepository {
 
     return checkIns
   }
+
+  async findById(checkInId: string) {
+    return this.items.find((checkIn) => checkIn.id === checkInId) || null
+  }
+
+  async save(checkIn: CheckIn) {
+    const checkInIndex = this.items.findIndex((item) => item.id === checkIn.id)
+
+    if (checkInIndex >= 0) {
+      this.items[checkInIndex] = checkIn
+    }
+
+    return checkIn
+  }
 }
