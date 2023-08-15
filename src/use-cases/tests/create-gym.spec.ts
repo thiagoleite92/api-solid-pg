@@ -1,5 +1,4 @@
 import { expect, it, describe, beforeEach } from 'vitest'
-import { compare } from 'bcryptjs'
 import { InMemoryGymsRepository } from '../../repositories/in-memory/in-memory-gyms-repository'
 import { CreateGymUseCase } from '../create-gym'
 
