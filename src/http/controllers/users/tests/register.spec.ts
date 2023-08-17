@@ -11,7 +11,7 @@ describe('e2e -> Register', () => {
     await app.close()
   })
 
-  it.only('should be able to register', async () => {
+  it('should be able to register', async () => {
     const response = await request(app.server).post('/users').send({
       name: 'John Doe',
       email: 'john.doe@gmail.com',
