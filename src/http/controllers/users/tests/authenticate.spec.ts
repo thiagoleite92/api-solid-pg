@@ -1,6 +1,6 @@
 import { expect, it, describe, beforeAll, afterAll } from 'vitest'
 import request from 'supertest'
-import { app } from '../../../app/app'
+import { app } from '../../../../app/app'
 
 describe('e2e -> Authenticate', () => {
   beforeAll(async () => {
